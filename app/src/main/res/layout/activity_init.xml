@@ -13,5 +13,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Pulse el botón para grabar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:id="@+id/info_text" />
+
+    <Button
+        android:text="Reproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:onClick="play"
+        android:id="@+id/play"
+        android:layout_alignBaseline="@+id/grabar"
+        android:layout_alignBottom="@+id/grabar"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Grabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="record"
+        android:id="@+id/grabar"
+        android:layout_marginEnd="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/play" />
 </RelativeLayout>
